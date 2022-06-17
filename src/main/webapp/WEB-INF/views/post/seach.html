@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<!--<h3>View Product</h3>-->
+<p>
+    <a href="/posts">
+        Back to post list
+    </a>
+</p>
+<div th:each="f : ${tim}" >
+        <label>STT:</label>
+    <br>
+        <label th:text="${f.id}"></label>
+        <label>ID:</label>
+    <br>
+        <label th:text="${f.title}"></label>
+        <label>TITLE:</label>
+    <br>
+        <label th:text="${f.content}"></label>
+        <label>CONTENT:</label>
+    <br>
+        <label th:text="${f.createAt}"></label>
+        <label>CREATEAT:</label>
+    <br>
+        <label th:text="${f.likes}"></label>
+        <label>LIKES:</label>
+</div>
+</body>
+</html>
